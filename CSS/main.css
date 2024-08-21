@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: rgb(245, 222, 179);
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: rgb(245, 222, 179);
+    text-decoration: none;
+    position: relative; /* Nécessaire pour que le ::after soit positionné par rapport à l'élément <a> */
+    transition: 1s;
+}
+
+/* Ajouter un soulignement sous chaque lien */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Épaisseur du soulignement */
+    background-color: gray; /* Couleur du soulignement */
+    left: 0;
+    bottom: -3px; /* Positionner juste en dessous du lien */
+    transform: scaleX(0); /* Initialement, le soulignement est invisible */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+/* Animation du soulignement au survol */
+nav ul li a:hover::after {
+    transform: scaleX(1); /* Le soulignement devient visible */
+    transform-origin: bottom left;
+}

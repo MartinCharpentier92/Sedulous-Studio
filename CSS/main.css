@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Eras Bold ITC';
+    src: url('../fonts/eras-itc-bold.ttf') format('truetype'); /* Chemin vers le fichier de police */
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Eras Bold ITC', sans-serif;
+}
+
+
 body {
     background-color: black;
     color: rgb(245, 222, 179);
@@ -5,10 +17,16 @@ body {
     padding: 0;
 }
 
+nav{
+    
+    margin-right: 10%;
+} 
+
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 nav a {
@@ -19,7 +37,8 @@ nav a {
 }
 
 /* Ajouter un soulignement sous chaque lien */
-nav ul li a::after {
+
+.nav-a-hover::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -37,3 +56,24 @@ nav ul li a:hover::after {
     transform: scaleX(1); /* Le soulignement devient visible */
     transform-origin: bottom left;
 }
+
+/* .nav-logo{
+    width: 20%;
+} */
+
+
+.nav-a-contact-chgmt:hover {
+    content: url('../img/logo\ contact-hover.png'); /* Chemin de la nouvelle image */
+}
+
+/* 
+.nav-logo-accueil img,
+.nav-logo-mission img,
+.nav-logo-contact img{
+    width: 80%;
+} */
+
+.text-bleu{
+    color: rgb(179,208,245);
+}
+

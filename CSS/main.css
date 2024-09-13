@@ -77,3 +77,11 @@ nav ul li a:hover::after {
     color: rgb(179,208,245);
 }
 
+.main-span1{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-justify: justify;
+    font-size: 2.5em;
+}

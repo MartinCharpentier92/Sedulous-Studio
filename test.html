@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/test.css">
+</head>
+<body>
+    
+
+    <div class="gallery-container">
+        <div class="arrow left-arrow" id="prev">&lt;</div>
+
+        <div class="main-image-container">
+            <img id="main-image" src="img/testimg1.jpg" alt="Image Principale">
+        </div>
+
+        <div class="thumbnails">
+            <img src="img/testimg2.jpg" alt="photo 1" class="thumbnail" onclick="changeImage(0)">
+            <img src="img/testimg3.png" alt="photo 2" class="thumbnail" onclick="changeImage(1)">
+            <img src="img/testimg4.jpg" alt="photo 3" class="thumbnail" onclick="changeImage(2)">
+
+            <!-- Ajoute autant de miniatures que tu veux -->
+        </div>
+
+        <div class="arrow right-arrow" id="next">&gt;   </div>
+    </div>
+
+    <script src="JS/test.js"></script>
+
+</body>
+</html>

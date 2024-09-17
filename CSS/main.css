@@ -92,6 +92,15 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
     margin: auto;
+
 }
+
+.main-video1{
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 

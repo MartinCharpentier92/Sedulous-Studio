@@ -6,9 +6,12 @@ const images = [
     // Ajoute ici les URLs de toutes tes images
 ];
 
+
 let currentIndex = 0;
 
 const mainImage = document.getElementById("main-image");
+const prevArrow = document.getElementById("prev");
+const nextArrow = document.getElementById("next");
 
 // Fonction pour changer d'image en fonction de l'index
 function changeImage(index) {
@@ -16,24 +19,13 @@ function changeImage(index) {
     mainImage.src = images[currentIndex];
 }
 
-// Fonction pour afficher l'image suivante automatiquement
-function nextImage() {
-    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-    changeImage(currentIndex);
-}
-
-// Démarrer le défilement automatique toutes les 5 secondes
-setInterval(nextImage, 5000); // 5000 ms = 5 secondes
-
-// Si tu veux garder les flèches pour un contrôle manuel, voici comment naviguer :
-const prevArrow = document.getElementById("prev");
-const nextArrow = document.getElementById("next");
-
+// Naviguer vers l'image précédente
 prevArrow.addEventListener("click", () => {
     currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
     changeImage(currentIndex);
 });
 
+// Naviguer vers l'image suivante
 nextArrow.addEventListener("click", () => {
     currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
     changeImage(currentIndex);

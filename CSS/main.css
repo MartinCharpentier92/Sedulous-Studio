@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Eras Bold ITC';
     src: url('../fonts/eras-itc-bold.ttf') format('truetype'); /* Chemin vers le fichier de police */
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -132,4 +132,14 @@ iframe{
     content: url('../img/logo\ reponse-hover.png');
 }
 
+.main-section4-text1{
+    margin-top: 5rem;
+}
 
+.main-section4-text1,
+.main-section4-text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2em;
+}

@@ -18,7 +18,6 @@ body {
 }
 
 nav{
-    
     margin-right: 10%;
 } 
 
@@ -142,4 +141,70 @@ iframe{
     justify-content: center;
     align-items: center;
     font-size: 2.2em;
+}
+
+.main-section5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    /* padding: 10%; */
+}
+
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper i{
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    line-height: 46px;
+    background: rgb(75, 75, 75);
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child{
+  left: -2%;
+}
+
+.wrapper i:last-child{
+    right: -2%;
+}
+
+.wrapper .carousel{
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel img{
+    height: 340px;
+    object-fit: cover;
+    width: calc(100%/3);
+    margin-left: 14px;
+    border: 1px solid red;
+
+}
+
+
+@media screen and (max-width: 900px){
+    .carousel img{
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px){
+    .carousel img{
+        width: 100%;
+    }
 }

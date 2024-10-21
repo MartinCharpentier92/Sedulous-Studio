@@ -7,7 +7,28 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="JS/carousel.js" defer></script>
+    <script>
+        window.onload = function() {
+            // Cible le carrousel et l'image 2
+            const carousel = document.querySelector('.carousel');
+            const imageToCenter = document.querySelector('#center-image');
+    
+            // Calcule le décalage nécessaire pour centrer l'image 2
+            const carouselWidth = carousel.offsetWidth;
+            const imageWidth = imageToCenter.offsetWidth;
+    
+            // Trouve la position de l'image 2 par rapport à son conteneur
+            const imagePosition = imageToCenter.offsetLeft;
+    
+            // Décale le carrousel pour que l'image 2 soit centrée
+            const offset = imagePosition - (carouselWidth / 2) + (imageWidth / 2);
+            carousel.scrollLeft = offset;
+        };
+    </script>
+
 </head>
+
+
 
 <body>
 <header>
@@ -71,23 +92,17 @@
     <section class="main-section5">
         
         <div class="wrapper">
-
-
             <i id="left" class="fa-solid fa-angle-left"></i>            
             <div class="carousel">
                 <img src="img/img-1.jpg" alt="">
-                <img src="img/img-2.jpg" alt="">
+                <img id="center-image" src="img/img-2.jpg" alt="">
                 <img src="img/img-3.jpg" alt="">
                 <img src="img/img-4.jpg" alt="">
                 <img src="img/img-5.jpg" alt="">
                 <img src="img/img-6.jpg" alt="">
-            
             </div>
             <i id="right" class="fa-solid fa-angle-right"></i>
-            
         </div>
-        
-       
         
     </section>
 

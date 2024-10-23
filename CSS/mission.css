@@ -75,3 +75,31 @@ nav ul li a:hover::after {
 .text-bleu{
     color: rgb(179,208,245);
 }
+
+.mission-section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mission-section1 h1{
+    font-size: 3.2em;
+    font-weight: bold;
+    display: flex;
+    margin-top: 10dvh;
+}
+
+.mission-section1 .mission-section1-img1{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    margin-top: 9dvh;
+} 
+
+.mission-section1 .mission-section1-img2{
+    width: 40%;
+    display: flex;
+    margin: auto;
+    margin-top: 15dvh;
+} 

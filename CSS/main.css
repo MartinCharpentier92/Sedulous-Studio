@@ -224,6 +224,7 @@ Correspond aux flèches directionnel pour les images du caroussel
     width: calc(100%/3);
     margin: 0% 7% 0% 7%;
     border-radius: 10%;
+    border: 3px solid  rgba(89, 124, 168, 1);
 }
 
 
@@ -237,4 +238,19 @@ Correspond aux flèches directionnel pour les images du caroussel
     .carousel img{
         width: 100%;
     }
+}
+
+
+/*TEST D'ANIMATION EN SCROLL VERS LE BAS
+https://www.youtube.com/shorts/xyTfSKMCJv0
+
+*/
+
+.box{
+    width: 50%;
+    height: 50vh;
+    background-color: red;
+    opacity: 0;
+    transform: translateX(4rem) ;
+    transition: opacity(1), transfirl;
 }

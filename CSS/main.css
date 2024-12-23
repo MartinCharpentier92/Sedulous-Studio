@@ -252,5 +252,5 @@ https://www.youtube.com/shorts/xyTfSKMCJv0
     background-color: red;
     opacity: 0;
     transform: translateX(4rem) ;
-    transition: opacity(1), transfirl;
+    transition: opacity 1s, transform 1s;
 }

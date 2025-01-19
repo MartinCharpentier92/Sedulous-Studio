@@ -1,13 +1,26 @@
 @font-face {
-    font-family: 'Eras Bold ITC';
-    src: url('../fonts/eras-itc-bold.ttf') format('truetype'); /* Chemin vers le fichier de police */
+    font-family: 'Eras-bold';
+    src: url(../fonts/Eras-bold.otf);
+    /* Chemin vers le fichier de police */
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'Eras Bold ITC', sans-serif;
+    font-family: 'Eras-bold', sans-serif;
 }
+
+
+.text-bleu{
+    color: rgb(179,208,245);
+}
+
+#text-light{
+    font-family: 'Eras-ITC', sans-serif;
+    src: url(../fonts/Eras-ITC.otf);
+    font-style: italic;
+}
+
 
 
 body {
@@ -72,9 +85,7 @@ nav ul li a:hover::after {
     width: 80%;
 } */
 
-.text-bleu{
-    color: rgb(179,208,245);
-}
+
 
 .main-span1{
     margin-top: 3rem;
@@ -135,6 +146,7 @@ iframe{
     margin-top: 5rem;
 }
 
+
 .main-section4-text1,
 .main-section4-text2{
     display: flex;
@@ -142,6 +154,21 @@ iframe{
     align-items: center;
     font-size: 2.2em;
 }
+
+.main-section5 img{
+    max-width: 25%;
+    max-height: 25%;
+    border-radius: 2rem;
+    border: 3px solid  rgba(89, 124, 168, 1);
+}
+
+.carousel{
+    display: flex;
+    flex-direction: ROW;
+    gap: 4em;
+}
+
+
 
 /* .main-section5{
     display: flex;
@@ -151,94 +178,6 @@ iframe{
     box-sizing: border-box;
     padding: 15%;
 } */
-
-.main-section5 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    box-sizing: border-box;
-    position: relative; /* Nécessaire pour positionner le pseudo-élément par rapport à la section */
-    overflow: hidden; /* Assure que le pseudo-élément ne déborde pas */
-}
-
-.main-section5::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 1) 100%);
-    pointer-events: none; /* Permet de ne pas interférer avec les éléments sous le dégradé */
-    z-index: 1; /* S'assure que le dégradé est par-dessus le contenu */
-}
-
-
-.wrapper{
-    max-width: 1200px; /* Limite la largeur maximale de la section */
-    width: 100%; /* Fait en sorte que l'élément prenne 100% de la largeur disponible */
-    margin: auto; /* Centre la section horizontalement */
-    box-sizing: border-box;
-    position: relative;
-    
-}
-
-
-/*
-Correspond aux flèches directionnel pour les images du caroussel
-*/
-.wrapper i{
-    top: 50%;
-    height: 46px;
-    width: 46px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    color: rgb(255, 36, 36);
-    text-align: center;
-    line-height: 46px;
-    background: rgb(255, 255, 255);
-    border-radius: 50%;
-    position: absolute;
-    transform: translateY(-50%);
-}
-
-.wrapper i:first-child{
-  left: -2%;
-}
-
-.wrapper i:last-child{
-    right: -2%;
-}
-
-.wrapper .carousel{
-    white-space: nowrap;
-    cursor: pointer;
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
-
-.carousel img{
-    height: 340px;
-    object-fit: cover;
-    width: calc(100%/3);
-    margin: 0% 7% 0% 7%;
-    border-radius: 10%;
-    border: 3px solid  rgba(89, 124, 168, 1);
-}
-
-
-@media screen and (max-width: 900px){
-    .carousel img{
-        width: calc(100% / 2);
-    }
-}
-
-@media screen and (max-width: 550px){
-    .carousel img{
-        width: 100%;
-    }
-}
 
 
 /*TEST D'ANIMATION EN SCROLL VERS LE BAS

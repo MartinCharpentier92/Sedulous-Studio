@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ITC Eras';
+    src: local('ITC Eras Light'), local('ITC-Eras-Light'),
+        url('ITCErasStd-Light.woff2') format('woff2'),
+        url('ITCErasStd-Light.woff') format('woff'),
+        url('ITCErasStd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }

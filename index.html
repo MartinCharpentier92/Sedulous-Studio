@@ -7,24 +7,7 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="JS/carousel.js" defer></script> 
-    <script>
-        window.onload = function() {
-            // Cible le carrousel et l'image 2
-            const carousel = document.querySelector('.carousel');
-            const imageToCenter = document.querySelector('#center-image');
     
-            // Calcule le décalage nécessaire pour centrer l'image 2
-            const carouselWidth = carousel.offsetWidth;
-            const imageWidth = imageToCenter.offsetWidth;
-    
-            // Trouve la position de l'image 2 par rapport à son conteneur
-            const imagePosition = imageToCenter.offsetLeft;
-    
-            // Décale le carrousel pour que l'image 2 soit centrée
-            const offset = imagePosition - (carouselWidth / 2) + (imageWidth / 2);
-            carousel.scrollLeft = offset;
-        };
-    </script>
 
 </head>
 
@@ -62,99 +45,137 @@
             clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen></iframe>
         </div>
+    </section>
 
 
+<!-- Deuxième partie - Lien formulaire de contact et entreprises partenaires-->   
 
-<!-- Partie contenant le lien vers la page de contact et les entreprises partenaires-->   
-
+    <section class="main-section2">
         <div>
             <a href="" class="main-reponse1-chgmt"><img class="main-reponse1-chgmtimg" src="img/logo reponse.png" alt=""></a>
-            
         </div>
         
         <div class="main-container-partner">
             <img class="main-container-partnerimg" src="img/They trusted us.png" alt="">
         </div>
-
     </section>
-    
-<!-- Troisième partie avec texte et carroussel d'image -->
-
-    <section class="main-section4">
         
-        <div class="main-section4-text1">
-            <p>DES EQUIPES ADAPTEES A <span class="text-bleu">VOS</span> BESOINS</p>
+
+<!-- Troisième partie avec texte  -->
+
+    <section class="main-section3">
+        
+        <div class="main-section3-text1">
+            <p>DES ÉQUIPES ADAPTÉES À <span class="text-bleu">VOS</span> BESOINS</p>
         </div>
 
-        <div class="main-section4-text2">
-            <p id="text-light">QUEL QUE SOIT LE TYPE DE PROJET</p>
+        <div class="main-section3-text2">
+            <p class="text-light">QUEL QUE SOIT LE TYPE DE PROJET</p>
         </div>
 
     </section>
 
 
 
-   <!--
-   Ici emplacement du caroussel
-   --> 
+<!--   Quatrième partie avec Caroussel     --> 
 
-   <section class="main-section5">
+   <section class="main-section4">
 
-    <div class="carousel">
-        <img src="img/img-1.jpg" alt="">
-        <p>test image 1</p>
-        <img src="img/img-2.jpg" alt="">
-        <p>test image 2</p>
-        <img src="img/img-3.jpg" alt="">
-        <p>test image 3</p>
-        <img src="img/img-4.jpg" alt="">
-        <p>test image 4</p>
-        <img src="img/img-5.jpg" alt="">
-        <p>test image 5</p>
-        <img src="img/img-6.jpg" alt="">
-        <p>test image 6</p>
+        <div class="carousel">
+            <img src="img/img-1.jpg" alt="">
+            <p>test image 1</p>
+            
+            <img src="img/img-2.jpg" alt="">
+            <p>test image 2</p>
+            
+            <img src="img/img-3.jpg" alt="">
+            <p>test image 3</p>
+            
+            <img src="img/img-4.jpg" alt="">
+            <p>test image 4</p>
+            
+            <img src="img/img-5.jpg" alt="">
+            <p>test image 5</p>
+            
+            <img src="img/img-6.jpg" alt="">
+            <p>test image 6</p>
 
-    </div>
-
-
-
-
-
+        </div>
    </section>
 
 
-    <p>ET PEU IMPORTE LA LANGUE </p>
-        
-    <div><img src="img/logo langage.png" alt=""></div>
-       
-       
-        <p>VOTRE <span class="text-bleu">TEMPS</span> EST <span class="text-bleu">PRECIEUX</span></p>
-        
-        <p>NOS ECHANGES SONT TRANSPARENTS ET CLAIRS</p>
-        
-        <p>CONTACTEZ NOUS</p>
-        
-        <div><a href=""><img src="img/logo reponse.png" alt=""></a></div>
-        
-        </div>
-    
-
-        <!-- Test du l'animation en scroll vers le bas-->
-        <div class="container   ">
-            <div class="box"></div>
-        </div>
-
-
-    
-    <footer>
-
+   <section class="main-section5">
         <div>
-            <img src="img/FOOTER.png" alt="">
-            <div>
-                
+            <p class="text-light">ET PEU IMPORTE LA LANGUE </p>
+        </div>
+        <div class="main-section5-img">
+            <img src="img/logo langage.png" alt="">
+        </div>
+            
+   </section>
+
+    <section class="main-section6">
+         
+
+        <div class="main-span6">
+            <div class="main-span6-txt1">
+                <p>VOTRE <span class="text-bleu">TEMPS</span> EST <span class="text-bleu">PRÉCIEUX</span></p>
+            </div>
+            <div class="main-span6-txt2">
+                <p class="text-light">NOS ÉCHANGES SONT TRANSPARENTS ET CLAIRS,</p>
+            </div>
+            <div class="main-span6-txt3">
+                <p class="text-light">CONTACTEZ NOUS</p>
             </div>
         </div>
 
+        <div>
+            <a href="" class="main-reponse1-chgmt"><img class="main-reponse1-chgmtimg" src="img/logo reponse.png" alt=""></a>
+        </div>
+
+    </section>
+        
+       
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="bloc footer-legal">
+                <h3>LÉGAL</h3>
+                <div class="legal-link">
+                    <a class="footer-a-hover" href="">MENTION LÉGALE</a>
+                    <a class="footer-a-hover" href="">PROTECTION DES DONNÉES</a>
+                    <a class="footer-a-hover" href="">CONDITIONS GÉNÉRALES DE VENTES</a>
+                    <a class="footer-a-hover" href="">CONDITIONS GÉNÉRALES D'UTILISATION</a>
+                    <a class="footer-a-hover" href="">COOKIES BANNER</a>
+                    <a class="footer-a-hover" href="">COOKIE</a>
+                </div>  
+            </div> 
+
+            <div class="bloc footer-nav">
+                <h3>NAVIGATION</h3>
+                <div class="navigation-link">
+                    <a class="footer-a-hover" href="">ACCUEIL</a>
+                    <a class="footer-a-hover" href="">MISSION CINEMA</a>
+                    <a class="footer-a-hover" href="">CONTACT</a>
+                    <a class="footer-a-hover" href="">TEL: +33.6.65.11.06.65</a>
+                    <a class="footer-a-hover" href="">EMAIL: sedulous.studio@gmail.com</a>
+                </div>
+            </div>
+ 
+            <div class="bloc footer-social">
+                <h3>SOCIAL</h3>
+                <div class="social-link">
+                    <a href=""><img src="img/logo-Linkedin.png" alt=""></a>
+                    <a href=""><img src="img/Logo-Insta.png" alt=""></a>
+                    <a href=""><img src="img/Logo-X.png" alt=""></a>
+                    <a href=""><img src="img/Logo-FB.png" alt=""></a>   
+                </div>
+            </div>
+
+        </div>
+
+        
     </footer>
 
 

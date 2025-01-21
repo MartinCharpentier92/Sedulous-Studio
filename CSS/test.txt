@@ -92,3 +92,23 @@ Correspond aux flèches directionnel pour les images du caroussel
     }
 }
 
+
+
+<script>
+        window.onload = function() {
+            // Cible le carrousel et l'image 2
+            const carousel = document.querySelector('.carousel');
+            const imageToCenter = document.querySelector('#center-image');
+    
+            // Calcule le décalage nécessaire pour centrer l'image 2
+            const carouselWidth = carousel.offsetWidth;
+            const imageWidth = imageToCenter.offsetWidth;
+    
+            // Trouve la position de l'image 2 par rapport à son conteneur
+            const imagePosition = imageToCenter.offsetLeft;
+    
+            // Décale le carrousel pour que l'image 2 soit centrée
+            const offset = imagePosition - (carouselWidth / 2) + (imageWidth / 2);
+            carousel.scrollLeft = offset;
+        };
+    </script>

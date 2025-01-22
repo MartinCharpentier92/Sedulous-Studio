@@ -236,22 +236,18 @@ iframe{
 /*
             Main section 4 (caroussel)
 */
-.main-section4 img{
-    max-width: 25%;
-    max-height: 25%;
-    border-radius: 2rem;
-    border: 3px solid  rgba(89, 124, 168, 1);
+
+
+
+.product{
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+
 }
 
-.carousel{
-    display: flex;
-    flex-direction: ROW;
-    gap: 4em;
-}
-
-
-.main-section4{
-    margin-bottom: 10rem;
+.product-category{
+    
 }
 
 

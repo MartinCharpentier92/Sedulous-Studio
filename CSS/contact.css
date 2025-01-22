@@ -73,14 +73,6 @@ nav ul li a:hover::after {
     content: url('../img/logo\ contact-hover.png'); /* Chemin de la nouvelle image */
 }
 
-/*
-            Section 1
-*/
-
-.text-bleu{
-    color: rgb(179,208,245);
-}
-
 
 
 /*
@@ -154,56 +146,54 @@ footer a:hover::after {
     padding: 0% 5% 0% 5%;
 }
 
+.text-bleu{
+    color: rgb(179,208,245);
+}
+
 /*
-
-
-
-
+            Contact section 1
 */
-.mission-section1{
+
+.contact-section1{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
-.mission-section1 h1{
+.contact-section1 h1{
     font-size: 3.2em;
     font-weight: bold;
     display: flex;  
     margin-top: 10dvh;
 }
 
-.mission-section1-txt1{
+.contact-section1-txt1{
     display: flex;
-    width: 66%;
+    margin: auto;
+    font-size: 2.3em;
+    text-align: justify;
+    margin-bottom: 3rem;
+    line-height: 120%;
+}
+
+.contact-section1-txt2{
+    display: flex;
+    flex-direction: column;
     margin: auto;
     font-size: 1.7em;
-    text-align: justify;
-    font-weight: 900;
     margin-bottom: 5rem;
     line-height: 120%;
 }
 
-.mission-section1-img{
+
+.contact-section1-txt3{
     display: flex;
+    flex-direction: column;
     margin: auto;
-    margin-bottom: 8rem;
+    font-size: 1.7em;
+    margin-bottom: 5rem;
+    line-height: 120%;
 }
 
-.mission-section1-img img{
-    width:  30em;
-    margin: auto;
-}
-
-
-.mission-dec1-chgmt{
-    margin-top: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}   
-
-.mission-deco1-chgmtimg:hover{
-    content: url('../img/logo\ decou-hover.png');
-}

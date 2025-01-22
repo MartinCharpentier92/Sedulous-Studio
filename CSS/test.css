@@ -1,77 +1,36 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+@font-face {
+    font-family: 'Eras ITC';
+    src: url(../fonts/Eras-ITC.otf);
+}
+
+*{
+    padding: 0;
     margin: 0;
-    background-color: #f4f4f4;
+    border: 1px solid red;
+    font-family: 'Eras ITC';
+    box-sizing: border-box;
 }
 
-.gallery-container {
+body{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
-.main-image-container {
-    width: 300px;
-    height: 300px;
+.wrapper{
+    max-width: 1200px;
+}
+
+.wrapper .caroussel{
+    white-space: nowrap;
+    cursor: pointer;
     overflow: hidden;
-    border: 2px solid #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
 }
 
-.main-image-container img {
-    max-width: 100%;
-    max-height: 100%;
+.caroussel img{
+    height: 50vh;
+    width: calc(100%/3);
+    object-fit: cover;
+
 }
 
-.thumbnails {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    bottom: -80px;
-    justify-content: center;
-    width: 100%;
-}
-
-.thumbnail {
-    width: 60px;
-    height: 60px;
-    margin: 0 5px;
-    border: 2px solid #ddd;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.thumbnail:hover {
-    transform: scale(1.1);
-}
-
-.arrow {
-    font-size: 24px;
-    cursor: pointer;
-    user-select: none;
-    padding: 10px;
-    background-color: #ddd;
-    border-radius: 50%;
-}
-
-.left-arrow {
-    position: absolute;
-    left: -40px;
-}
-
-.right-arrow {
-    position: absolute;
-    right: -40px;
-}
-
-.arrow:hover {
-    background-color: #ccc;
-}
